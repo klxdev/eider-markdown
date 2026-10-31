@@ -1,7 +1,7 @@
 //! A CommonMark subset plus GFM tables, parsed into a block tree and rendered as HTML.
 //! Pure Eider, no capabilities.
 //!
-//! The subset is the one docs/site/CONTRACT.md fixes for the documentation site: ATX
+//! The subset is the one eider-lang's docs/site/CONTRACT.md fixes for its site: ATX
 //! headings (`#` to `######`) and setext headings (`===`, `---` under a paragraph),
 //! paragraphs with lazy continuation, emphasis and strong emphasis (`*` and `_`, with
 //! CommonMark's flanking rules, so `snake_case` stays text), code spans with backtick runs,

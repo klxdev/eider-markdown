@@ -1,4 +1,4 @@
-// packages/markdown: each case prints its name and the HTML of its source (checked by hand),
+// eider-markdown: each case prints its name and the HTML of its source (checked by hand),
 // then the queries (links, headings, code blocks, title, summary) with their source lines.
 import "std/bytes"
 import "std/io"
