@@ -44,7 +44,7 @@ fn main() uses io {
     case("item with a fence", "- run this:\n\n  ```sh\n  # not a heading\n  - not an item\n  ```\n- done\n")
     case("list markers", "* star\n+ plus\n- - -\n- after hr\n")
     case("ordered start and interruption", "Text\n2. no list\n\n7. seven\n8. eight\n")
-    case("fences", "```eider\nfn main() {}\n# hash\n- dash\n```\n\n~~~\ntilde\n```\nstill code\n~~~\n\n````\n```\nfour\n````\n")
+    case("fences", "```eider\nfn main() {{}}\n# hash\n- dash\n```\n\n~~~\ntilde\n```\nstill code\n~~~\n\n````\n```\nfour\n````\n")
     case("unclosed fence", "text\n```text\nruns\n\nto the end\n")
     case("block quote", "> quoted\nlazy\n> - item\n>   - nested\n>\n> > deeper\n")
     case("callouts", "> **Note:** a note.\n\n> **Warning:** careful.\n\n> **Tip:** try this.\n\n> **Other:** plain.\n")
@@ -58,7 +58,7 @@ fn main() uses io {
     case("empty items", "-\n- b\n*\n")
 
     // queries
-    let src = "# The Title\n\nSee [one](a.md) and\n![pic](p.png).\n\n## Usage\n\n- item [two](api:std/stream#BufReader)\n\n  ```eider\n  fn main() {}\n  ```\n\n> ```eider,fragment\n> print(1)\n> ```\n\n| a | b |\n|---|---|\n| [three](c.md) | x |\n\n```output\n1\n```\n\n## Usage\n"
+    let src = "# The Title\n\nSee [one](a.md) and\n![pic](p.png).\n\n## Usage\n\n- item [two](api:std/stream#BufReader)\n\n  ```eider\n  fn main() {{}}\n  ```\n\n> ```eider,fragment\n> print(1)\n> ```\n\n| a | b |\n|---|---|\n| [three](c.md) | x |\n\n```output\n1\n```\n\n## Usage\n"
     let d = markdown.parse(src.bytes())
     io.outln("== links".bytes())
     for l in markdown.links(d) {
