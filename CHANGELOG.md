@@ -3,6 +3,10 @@
 eider-markdown's versions (semver). Before 1.0 the MAJOR.MINOR is the Eider toolchain's it goes
 with (`eider` in eider.toml), the PATCH its own.
 
+## 0.6.0
+
+For Eider 0.6 (`eider = "0.6"`). Nothing else changed.
+
 ## 0.5.0
 
 For Eider 0.5 (`eider = "0.5"`). Nothing else changed.
